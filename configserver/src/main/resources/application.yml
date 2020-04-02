@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jiabb-gh/aispringcloud.git
+          search-paths: config
+          username: 1173163912@qq.com
+          password: 678zjb5166
+      label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://locahost:8761/eureka
